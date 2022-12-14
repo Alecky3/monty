@@ -1,3 +1,4 @@
+#include "monty.h"
 /**
  * pall - function the prints the stack
  * @stack: the top of stack
@@ -10,7 +11,7 @@ void pall(stack_t **stack, unsigned int line_number)
 	stack_t *head;
 	(void)line_number;
 
-	print = *stack;
+	head = *stack;
 	while (head != NULL)
 	{
 		printf("%d\n", head->n);
@@ -39,7 +40,7 @@ void push(stack_t **stack, unsigned int line_number, int n)
 		fprintf(stderr, "Error: malloc failed\n");
 		exit(EXIT_FAILURE);
 	}
-	new_elem->n = variables.temp;
+	new_elem->n = n;
 	new_elem->prev = NULL;
 	new_elem->next = *stack;
 
