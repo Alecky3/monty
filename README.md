@@ -1,1 +1,1 @@
-stacks and queues
+Stacks and Queues data structures operations.
