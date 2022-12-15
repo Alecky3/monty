@@ -36,7 +36,7 @@ void f_add(stack_t **head, unsigned int counter)
  * top element of the stack by the top element of the stack
  * @head: stack head
  * @counter: line_number
- * Return: no return
+ * Return: void
 */
 void f_mod(stack_t **head, unsigned int counter)
 {
