@@ -1,29 +1,5 @@
 #include "monty.h"
 /**
- * _strcmp - compares strings
- * @opcode: a string to be compared
- * @list: a string to be compared
- * Return: 0
- */
-int _strcmp(char *opcode, char *list)
-{
-	while (*list != '\0')
-	{
-		if (*list == ' ')
-			list++;
-		else if (*opcode == *list)
-		{
-			opcode++;
-			list++;
-			if (*opcode == '\0' && (*list == ' ' || *list == '\n' || *list == '\0');
-					return (1);
-		}
-		else
-		return (0);
-		}
-		return (0);
-}
-/**
  * f_add - adds the top two elements of the stack.
  * @head: stack head
  * @counter: line_number
